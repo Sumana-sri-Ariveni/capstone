@@ -1,0 +1,97 @@
+<html>
+    <head>
+        <title>signup page</title>
+        <style>
+            body{
+               background:linear-gradient(rgb(118,214,254),#ebf47b);
+               height : 79vh;
+           }
+           h1{
+               margin-left : 480px;
+               margin-top : 150px;
+               width: 550px;
+               text-align : center;
+               border: 3px solid black;
+               border-top-left-radius : 25px;
+               border-top-right-radius : 25px;
+               color:black;
+               background-color :#9999cc;
+               padding: 20px;
+           }
+           .container{
+               margin-left : 480px;
+               margin-top : -22px;
+               border : 3px solid black;
+               height :270px;
+               width : 590px;
+               border-bottom-left-radius: 25px;
+               border-bottom-right-radius : 25px;
+               text-align: center;
+               background-color :#666666;
+           }
+          
+           #username{
+               margin-left : 15px;
+               color : whitesmoke;
+               margin-left : 140px;
+               font-size : 30px;
+           }
+           #password{
+               margin-left : 25px;
+               color : whitesmoke;
+               margin-left : 140px;
+               font-size : 30px;
+           }
+           input{
+               font-size : 20px;
+               margin-left : 30px;
+               margin-top : -10px;
+               height : 30px;
+               width : 250px;
+               background-color: #9aa5b1;
+           }
+            
+           .username{
+               margin-top :50px;
+               padding-bottom : 0px;
+           }
+           .pass{
+               margin-top :-20px;
+               padding-top : 0px;
+           }
+           #submit{
+               margin-left : 750px;
+               margin-top : -93px;
+               text-align : center;
+               border : 1px solid black;
+               height : 35px;
+               font-size : 20px;
+               background-color: #9999cc;
+           }
+</style>           
+    </head>
+    <body>
+         
+        <h1>Login Form</h1>
+        <div class="container">
+            <form method="post" action="/loginSubmit">
+                <div class="username">
+                    <label id="username">Username :</label>
+                    <input type="text" name="username" />
+                </div>
+                    <br>
+                    <br>
+                    <br>
+                <div class="pass"></div>
+                    <label id="password">Password :</label>
+                    <input type="password" name="password" />
+                </div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                <button type="submit" id="submit" value="Submit">SUBMIT</button>
+            </form>
+        </div>
+            
+    </body>

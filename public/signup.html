@@ -1,0 +1,133 @@
+<html>
+    <head>
+        <title></title>
+    <style>
+     body{
+        background:linear-gradient(rgb(118,214,254),#ebf47b);
+        height : 79vh;
+    }
+    h1{
+        margin-left : 120px;
+        margin-top : 150px;
+        width: 550px;
+        text-align : center;
+        border: 3px solid black;
+        border-top-left-radius : 25px;
+        border-top-right-radius : 25px;
+        color:black;
+        background-color :#9999cc;
+        padding: 20px;
+    }
+    .container{
+        margin-left : 120px;
+        margin-top : -22px;
+        border : 3px solid black;
+        height :270px;
+        width : 590px;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius : 25px;
+        text-align: center;
+        background-color :#666666;
+    }
+    #full_name{
+        margin-left : 12px;
+        color : whitesmoke;
+        font-size : 30px;
+    }
+    #username{
+        margin-left : 12px;
+        color : whitesmoke;
+        font-size : 30px;
+    }
+    #email{
+        margin-left : 25px;
+        color : whitesmoke;
+        margin-left : 180px;
+        font-size : 30px;
+    }
+    #password{
+        margin-left : 25px;
+        color : whitesmoke;
+        margin-left : 140px;
+        font-size : 30px;
+    }
+    input{
+        font-size : 20px;
+        margin-left : 30px;
+        margin-top : -30px;
+        height : 30px;
+        width : 250px;
+        background-color: #9aa5b1;
+    }
+    .user{
+        padding-top : 10px;
+        padding-bottom : -20px;
+    }
+    .user1{
+        padding-top : 10px;
+        padding-bottom : -20px;
+    }
+    .email{
+        margin-top :-160px;
+        padding-bottom : 0px;
+    }
+    .pass{
+        margin-top :-20px;
+        padding-top : 0px;
+    }
+    #submit{
+        margin-left : 130px;
+        margin-top : -20px;
+        text-align : center;
+        border : 1px solid black;
+        height : 35px;
+        font-size : 20px;
+        background-color: #9999cc;
+    }
+    </style>
+    </head>
+        <body>
+        <center>
+        <div class="h1">
+            <h1>Signup page with firebase</h1>
+            </div>
+            <div class="container">
+            <form method="post" action="/signupSubmit">
+                <br>
+                <br>
+            <div class="user">
+                <label id="username">Username : </label>
+                <input type="text" name="username" required />
+            </div>
+                <br>
+                <br>
+                <br>
+            <!--<div class="user1">
+                <label id="last_name">Last name : </label>
+                <input type="text" name="last_name" />
+            </div>-->
+                <br>
+                <br>
+                <br>
+            </div>
+            <div class="email">
+                <label id="email">Email :</label>
+                <input type="email" name="email" required />
+            </div>
+                <br>
+                <br>
+                <br>
+            <div class="pass"></div>
+                <label id="password">Password :</label>
+                <input type="password" name="password" required/>
+            </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <button type="submit" id="submit" value="submit">SUBMIT</button>
+        </center>
+            </form>
+        </div>
+        </body>
+        </html>
